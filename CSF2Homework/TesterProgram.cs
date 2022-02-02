@@ -22,6 +22,8 @@ namespace CSF2Homework
             Console.WriteLine();
             Login l1 = new Login("Redifer", "TKCRED1fer123");
             Console.WriteLine(l1);
+            Console.WriteLine();
+            ContactInfo c1 = new ContactInfo("14345 west 116th street", "Olathe", "Kansas", "66062", "913-731-9809", "mikeredifer@yahoo.com");
 
 
         }//end main
