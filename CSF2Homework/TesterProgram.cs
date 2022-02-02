@@ -19,7 +19,9 @@ namespace CSF2Homework
             Console.WriteLine();
             Vehicle v1 = new Vehicle("Honda", "Civic Si", 2020, 2900);
             Console.WriteLine(v1);
-
+            Console.WriteLine();
+            Login l1 = new Login("Redifer", "TKCRED1fer123");
+            Console.WriteLine(l1);
 
 
         }//end main
