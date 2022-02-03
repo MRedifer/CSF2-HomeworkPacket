@@ -43,11 +43,7 @@ namespace ClassesLibrary
 
         public CreditCardAccount(int v1, ContactInfo c1, int v2, bool v3, decimal v4)
         {
-            this.v1 = v1;
-            this.c1 = c1;
-            this.v2 = v2;
-            this.v3 = v3;
-            this.v4 = v4;
+            
         }
     }
 }

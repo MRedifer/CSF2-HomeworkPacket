@@ -28,6 +28,8 @@ namespace CSF2Homework
             Console.WriteLine(c1);
             CreditCardAccount cca1 = new CreditCardAccount(987654321, c1, 10231, false, Convert.ToDecimal(3.5));
             Console.WriteLine(cca1);
+            Book b1 = new Book("Berserk", "Kentaro Miura", 9200);
+            Console.WriteLine(b1);
 
 
         }//end main
