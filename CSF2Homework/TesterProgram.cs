@@ -26,7 +26,7 @@ namespace CSF2Homework
             ContactInfo c1 = new ContactInfo("14345 west 116th street", "Olathe", "Kansas", "66062", "913-731-9809", "mikeredifer@yahoo.com");
             Customer u1 = new Customer("0542", "Michael", "Redifer", c1);
             Console.WriteLine(c1);
-            CreditCardAccount cca1 = new CreditCardAccount(987654321, c1, 10231, false, Convert.ToDecimal(3.5));
+            CreditCardAccount cca1 = new CreditCardAccount(987654321, u1, Convert.ToDecimal(12546.33), false, Convert.ToDecimal(3.3));
             Console.WriteLine(cca1);
             Book b1 = new Book("Berserk", "Kentaro Miura", 9200);
             Console.WriteLine(b1);

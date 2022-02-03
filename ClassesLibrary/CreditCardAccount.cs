@@ -8,8 +8,6 @@ namespace ClassesLibrary
 {
     public class CreditCardAccount
     {
-        private int _accountNumber;
-
         private decimal _balance;
 
         private bool _isPastDue;
@@ -17,33 +15,57 @@ namespace ClassesLibrary
         private decimal _annualInterestRate;
 
         private Customer _customerInfo;
-        
-        private ContactInfo c1;
-        
 
-        public int AccountNumbers { get; set; }
-
-        public decimal Balance { get; set; }
-
-        public bool IsPastDue { get; set; }
-
-        public decimal AnnualInterestRate { get; set; }
-
-        public Customer CustomerInfo { get; set; }
+        private int _accountNumber;
 
 
-        public CreditCardAccount(int accountNumbers, Customer customerInfo, decimal balance, bool isPastDue, decimal annualInterestRate)
+
+
+
+
+        public decimal Balance
         {
-            AccountNumbers = accountNumbers;
+            get { return _balance; }
+            set { _balance = value; }
+        }
+
+        public bool IsPastDue
+        {
+            get { return _isPastDue; }
+            set { _isPastDue = value; }
+        }
+
+        public decimal AnnualInterestRate
+        {
+            get { return _annualInterestRate; }
+            set { _annualInterestRate = value; }
+        }
+
+        public Customer CustomerInfo
+        {
+            get { return _customerInfo; }
+            set { _customerInfo = value; }
+        }
+
+        public int AccountNumber
+        {
+            get { return _accountNumber; }
+            set { _accountNumber = value; }
+        }
+
+
+        public CreditCardAccount(int accountNumber, Customer customerInfo, decimal balance, bool isPastDue, decimal annualInterestRate)
+        {
+            AccountNumber = accountNumber;
             CustomerInfo = customerInfo;
             Balance = balance;
             IsPastDue = isPastDue;
             AnnualInterestRate = annualInterestRate;
         }
-
-        public CreditCardAccount(int v1, ContactInfo c1, int v2, bool v3, decimal v4)
+        public override string ToString()
         {
-            
+            return string.Format("Account Number: {0}\nCustomer Info: {1}\nBalance: {2}\nIs Past Due?: {3}\nAnnual Interest Rate: {4}", AccountNumber, CustomerInfo, Balance, IsPastDue, AnnualInterestRate);
         }
+
     }
 }
