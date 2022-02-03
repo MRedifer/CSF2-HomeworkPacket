@@ -24,6 +24,8 @@ namespace CSF2Homework
             Console.WriteLine(l1);
             Console.WriteLine();
             ContactInfo c1 = new ContactInfo("14345 west 116th street", "Olathe", "Kansas", "66062", "913-731-9809", "mikeredifer@yahoo.com");
+            Customer u1 = new Customer("0542", "Michael", "Redifer", c1);
+            Console.WriteLine(c1);
 
 
         }//end main
