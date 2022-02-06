@@ -30,6 +30,12 @@ namespace CSF2Homework
             Console.WriteLine(cca1);
             Book b1 = new Book("Berserk", "Kentaro Miura", 9200);
             Console.WriteLine(b1);
+            List<Book> books1 = new List<Book>();
+            books1.Add(b1);
+            Library li1 = new Library("Olathe Public Library", "12345 main street", "Olathe", "Kansas", "66062", books1);
+            Song so1 = new Song("Tool", "Forty Six & 2", 342);
+            Song so2 = new Song("Tool", "Ænima", 417);
+            Console.WriteLine(so1);
 
 
         }//end main
