@@ -36,6 +36,11 @@ namespace CSF2Homework
             Song so1 = new Song("Tool", "Forty Six & 2", 342);
             Song so2 = new Song("Tool", "Ænima", 417);
             Console.WriteLine(so1);
+            List<Song> songs1 = new List<Song>();
+            songs1.Add(so1);
+            songs1.Add(so2);
+            Artist a1 = new Artist("Tool", "Metal", songs1);
+            Console.WriteLine(a1);
 
 
         }//end main
