@@ -43,6 +43,8 @@ namespace CSF2Homework
             Console.WriteLine(a1);
             MotorHome m1 = new MotorHome("Ford", "Beyond", 2022, 25000, 1);
             Console.WriteLine(m1);
+            Truck t1 = new Truck("Ford", "F150", 1991, 3769, 1610);
+            Console.WriteLine(t1);
 
 
         }//end main
