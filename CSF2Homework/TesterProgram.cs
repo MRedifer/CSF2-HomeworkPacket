@@ -41,6 +41,8 @@ namespace CSF2Homework
             songs1.Add(so2);
             Artist a1 = new Artist("Tool", "Metal", songs1);
             Console.WriteLine(a1);
+            MotorHome m1 = new MotorHome("Ford", "Beyond", 2022, 25000, 1);
+            Console.WriteLine(m1);
 
 
         }//end main
